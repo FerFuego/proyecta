@@ -11,7 +11,7 @@ spl_autoload_register( function ($class) {
  * Load .env
  */
 $root = $_SERVER['DOCUMENT_ROOT'];
-$envFilepath = "$root/.env";
+$envFilepath = "$root/tienda/.env";
 
 if (is_file($envFilepath)) {
     $file = new \SplFileObject($envFilepath);
