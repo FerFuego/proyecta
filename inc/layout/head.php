@@ -26,8 +26,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Proyecta Materiales">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="Empresa dedicada a la venta de Materiales de Construcción, sanitarios, aberturas, cerámicos, muebles y mucho más">
+    <meta name="description" content="Empresa dedicada a la venta de Materiales de Construcción, sanitarios, aberturas, cerámicos, muebles y mucho más">
     <meta name="author" content="Luciano Colmano y Fernando Catalano">
     <meta name="Robots" content="All">
     <meta name="Revisit-after" content="15 days">

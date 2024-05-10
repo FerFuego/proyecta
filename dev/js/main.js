@@ -636,7 +636,7 @@ $(document).ready( function () {
             processData: false,
             success: function (response) {
                 if (response == 'true') {
-                    $('#item_order_'+id_pedido).css('background-color','rgba(#7fad39, .5)'); // Add green background
+                    $('#item_order_'+id_pedido).css('background-color','rgba(#02173c, .5)'); // Add green background
                     toastr.success('El Pedido finalizado!');
                     location.reload();
                 } else {
