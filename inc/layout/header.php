@@ -12,17 +12,17 @@
         <div class="humberger__menu__cart mb-0">
             <a href="./carrito.php" class="text-black"><i class="fa fa-shopping-bag"></i> Carrito</a>
         </div>
-       <?php echo Polirubro::getItemsSession(); ?>
+       <?php echo Store::getItemsSession(); ?>
     </div>
 
     <nav class="humberger__menu__nav mobile-menu">
         <ul>
-            <li class="<?php echo (Polirubro::normalize_title() === '')? 'active':''?>"><a href="./">Home</a></li>
-            <li class="<?php echo (Polirubro::normalize_title() === 'Nosotros')? 'active':''?>"><a href="./nosotros.php">Nosotros</a></li>
-            <li class="<?php echo (Polirubro::normalize_title() === 'Productos')? 'active':''?>"><a href="./productos.php">Productos</a></li>
-            <li class="<?php echo (Polirubro::normalize_title() === 'Carrito')? 'active':''?>"><a href="./carrito.php">Carrito</a></li>
-            <li class="<?php echo (Polirubro::normalize_title() === 'Contacto')? 'active':''?>"><a href="./contacto.php">Contacto</a></li>
-            <?php if ( Polirubro::is_Admin() ) : ?>
+            <li class="<?php echo (Store::normalize_title() === '')? 'active':''?>"><a href="./">Home</a></li>
+            <li class="<?php echo (Store::normalize_title() === 'Nosotros')? 'active':''?>"><a href="./nosotros.php">Nosotros</a></li>
+            <li class="<?php echo (Store::normalize_title() === 'Productos')? 'active':''?>"><a href="./productos.php">Productos</a></li>
+            <li class="<?php echo (Store::normalize_title() === 'Carrito')? 'active':''?>"><a href="./carrito.php">Carrito</a></li>
+            <li class="<?php echo (Store::normalize_title() === 'Contacto')? 'active':''?>"><a href="./contacto.php">Contacto</a></li>
+            <?php if ( Store::is_Admin() ) : ?>
                 <li><a href="cpanel.php" class="<?php echo (!isset($opcion) || $opcion == '') ? 'active' : '';?> item">Dashboard</a></li>
                 <li><a href="cpanel.php?opcion=importar" class="<?php echo (isset($opcion) && $opcion == 'importar') ? 'active' : '';?> item">Importar Productos</a></li>
                 <li><a href="cpanel.php?opcion=productos" class="<?php echo (isset($opcion) && $opcion == 'productos') ? 'active' : '';?> item">Gestion de Productos</a></li>
@@ -85,7 +85,7 @@
                             </div>
                         <?php endif; ?>
                         <div class="header__top__right__auth">
-                            <?php echo Polirubro::getItemsSession(); ?>
+                            <?php echo Store::getItemsSession(); ?>
                         </div>
                     </div>
                 </div>
@@ -103,19 +103,19 @@
             <div class="col-lg-7">
                 <nav class="header__menu">
                     <ul>
-                        <li class="<?php echo (Polirubro::normalize_title() === '')? 'active':''?>"><a href="./">Inicio</a></li>
-                        <li class="<?php echo (Polirubro::normalize_title() === 'Nosotros')? 'active':''?>"><a href="./nosotros.php">Nosotros</a></li>
-                        <li class="<?php echo (Polirubro::normalize_title() === 'Productos')? 'active':''?>"><a href="./productos.php">Productos</a></li>
-                        <li class="<?php echo (Polirubro::normalize_title() === 'Carrito')? 'active':''?>"><a href="./carrito.php">Carrito</a></li>
-                        <li class="<?php echo (Polirubro::normalize_title() === 'Contacto')? 'active':''?>"><a href="./contacto.php">Contacto</a></li>
-                        <?php if ( Polirubro::is_Admin() ) : ?>
-                            <li class="<?php echo (Polirubro::normalize_title() === 'CPanel')? 'active':''?>"><a href="./cpanel.php">Admin</a></li>
+                        <li class="<?php echo (Store::normalize_title() === '')? 'active':''?>"><a href="./">Inicio</a></li>
+                        <li class="<?php echo (Store::normalize_title() === 'Nosotros')? 'active':''?>"><a href="./nosotros.php">Nosotros</a></li>
+                        <li class="<?php echo (Store::normalize_title() === 'Productos')? 'active':''?>"><a href="./productos.php">Productos</a></li>
+                        <li class="<?php echo (Store::normalize_title() === 'Carrito')? 'active':''?>"><a href="./carrito.php">Carrito</a></li>
+                        <li class="<?php echo (Store::normalize_title() === 'Contacto')? 'active':''?>"><a href="./contacto.php">Contacto</a></li>
+                        <?php if ( Store::is_Admin() ) : ?>
+                            <li class="<?php echo (Store::normalize_title() === 'CPanel')? 'active':''?>"><a href="./cpanel.php">Admin</a></li>
                         <?php endif; ?>
                     </ul>
                 </nav>
             </div>
             <div class="col-lg-2">
-                <?php echo Polirubro::getResumenCart(); ?>
+                <?php echo Store::getResumenCart(); ?>
             </div>
         </div>
         <div class="humberger__open">

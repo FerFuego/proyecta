@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <!-- php Functions -->
-<?php require('inc/functions/class-polirubro.php'); ?>
+<?php require('inc/functions/class-store.php'); ?>
 
 <?php
     // Variables para los Productos 

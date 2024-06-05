@@ -2,7 +2,7 @@
 /**
  * Global class
  */
-Class Polirubro {
+Class Store {
 
     public function __construct() {
         date_default_timezone_set('America/Argentina/Buenos_Aires');
@@ -221,4 +221,4 @@ Class Polirubro {
     }
 }
 
-new Polirubro;
+new Store;
