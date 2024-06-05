@@ -82,14 +82,20 @@ Class Store {
     public function getBodyEmail($id_pedido) {
 
         $total = 0;
+        $nombre =  getenv('SMTP_FROM');
         $pedido = new Pedidos($id_pedido);
+        $config = new Configuracion();
+        $direccion = $config->direccion;
+        $email     = $config->email;
+        $telefono  = $config->telefono;
+        $whatsapp  = $config->whatsapp;
         
         // Construyo el Cuerpo del Mail.
-        $body = "<h2>Pedido Web Nuestro Polirrubros</h2>
-                <p align='center'><strong>Nuestro Polirrubros de Alejandra Barzabal</strong><br>
-                Sargento Cabral 234 - 2550 Bell Ville, C&oacute;rdoba<br>
-                Tel.: (03537) 410102 | WhatsApp: 3537-536991 | E-Mail: 
-                <a href='mailto:nuestropoli@gmail.com'>nuestropoli@gmail.com</a>
+        $body = "<h2>{$nombre}</h2>
+                <br>
+                {$direccion}<br>
+                Tel.: {$telefono} | WhatsApp: {$whatsapp} | E-Mail: 
+                <a href='mailto:{$email}'>{$email}</a>
                 </p>
                 <p align='left'>
                 <strong>Pedido</strong>: ".$id_pedido."
@@ -168,7 +174,7 @@ Class Store {
         $mail->AddAddress($emailDestino2); // Copia 2 para el vendedor.
         $mail->AddAddress($emailCopia); // Copia para el cliente.
         $mail->AddReplyTo($emailDestino); // Esto es para que al recibir el correo y poner Responder, lo haga a la cuenta del vendedor.
-        $mail->Subject = "Nuestro Polirrubros - Pedido: ".$id_pedido; // Este es el titulo del email.
+        $mail->Subject = "{$nombre} - Pedido: ".$id_pedido; // Este es el titulo del email.
         $mail->Body = "{$cuerpo}"; // Texto del email en formato HTML
         //$mail->AltBody = "{$mensaje} \n\n Formulario de ejemplo Web Polirrubros"; // Texto sin formato HTML
         
