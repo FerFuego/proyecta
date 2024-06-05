@@ -28,9 +28,9 @@ class Productos {
     public $observaciones;
     protected $obj;
 
-    public function __construct($id=0) {
+    public function __construct($id='') {
 
-        if ($id != 0) {
+        if ($id !== '') {
             
             $this->obj = new sQuery();
             $result = $this->obj->executeQuery("SELECT * FROM productos WHERE CodProducto='$id'");
