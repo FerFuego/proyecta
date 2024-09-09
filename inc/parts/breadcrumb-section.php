@@ -5,8 +5,8 @@
                 <div class="breadcrumb__text">
                     <h2><?php echo Store::normalize_title(); ?></h2>
                     <div class="breadcrumb__option">
-                        <a href="/">Inicio</a>
-                        <span>&nbsp;<?php echo Store::normalize_title(); ?></span>
+                        <a href="/">Inicio</a>&nbsp;
+                        <span><?php echo Store::normalize_title(); ?></span>
                     </div>
                 </div>
             </div>
