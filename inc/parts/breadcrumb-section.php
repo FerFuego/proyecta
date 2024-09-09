@@ -6,7 +6,7 @@
                     <h2><?php echo Store::normalize_title(); ?></h2>
                     <div class="breadcrumb__option">
                         <a href="/">Inicio</a>
-                        <span><?php echo Store::normalize_title(); ?></span>
+                        <span>&nbsp;<?php echo Store::normalize_title(); ?></span>
                     </div>
                 </div>
             </div>

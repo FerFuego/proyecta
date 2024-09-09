@@ -28,9 +28,12 @@
                 Somos un grupo empresario familiar con amplias unidades de negocios que se van complementando haciendo de este grupo una sólida y firme compañía que genera beneficios a sus usuarios por medio de la generación de volúmenes y compras en pool.
             </p>
             <p>
-                Comenzamos con un emprendimiento de Loteos de la ciudad de Bell Ville en expansión a otras zonas. Además somos desarrollistas inmobiliarios de pequeños y grandes emprendimientos. Y desde 2015 creamos la unidad de negocios que cierra un circulo sobre la industria de la construcción por medio de MATERIALES GRUESOS DE CONSTRUCCIÓN.
+                Comenzamos con un emprendimiento de Loteos de la ciudad de Bell Ville en expansión a otras zonas. Además somos desarrollistas inmobiliarios de pequeños y grandes emprendimientos. Y desde 2015 creamos la unidad de negocios que cierra un círculo sobre la industria de la construcción por medio de MATERIALES GRUESOS DE CONSTRUCCIÓN.
             </p>
-                Nuestra apuesta es la satisfacción de nuestros clientes por medio de la capacitación continua de nuestro personal así como la compra en escala para poder ofrecer a nuestros cliente siempre un precio competitivo. Queremos que compres en Bell Ville, y nosotros somos la oferta más conveniente.
+                Nuestra apuesta es la satisfacción de nuestros clientes por medio de la capacitación continua de nuestro personal así como la compra en escala para poder ofrecer a nuestros clientes siempre un precio competitivo. Queremos que compres en Bell Ville, y nosotros somos la oferta más conveniente.
+            </p>
+            <p>
+                Más info sobre nuestra empresa en nuestro sitio web institucional: <a href="https://www.proyectamateriales.com/" target="_blank">www.proyectamateriales.com</a></p>
             </p>
         </div>
     </div>
