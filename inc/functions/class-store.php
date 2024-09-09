@@ -22,7 +22,7 @@ Class Store {
 
     public static function normalize_title() {
         $base = explode( '?', $_SERVER['REQUEST_URI'] );
-        return ucfirst( str_replace( ['/','nuevo','.php'], ['','',''], $base[0] ) );
+        return ucfirst( str_replace( ['/','nuevo','.php', 'tienda'], ['','','',''], $base[0] ) );
     }
 
     public static function get_slug($string) {
