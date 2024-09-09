@@ -61,12 +61,12 @@
 
                             <h4>Cod.: <?php echo $product->getCode(); ?></h4>
                             <?php if ($general->showPrices()): ?>
-                                <form class="js-form-cart">
-                                    <div class="product__details__price">$<?php echo number_format($product->PreVtaFinal1(), 2,',','.'); ?></div>
-                                    <input type="hidden" name="id_product" value="<?php echo $product->getID(); ?>">
-                                    <input type="hidden" name="cod_product" value="<?php echo $product->getCode(); ?>">
-                                    <input type="hidden" name="name_product" value="<?php echo $product->getNombre(); ?>">
-                                    <input type="hidden" name="price_product" value="<?php echo $product->PreVtaFinal1(); ?>">
+                                <!-- <form class="js-form-cart">
+                                    <div class="product__details__price">$<?php //echo number_format($product->PreVtaFinal1(), 2,',','.'); ?></div>
+                                    <input type="hidden" name="id_product" value="<?php //echo $product->getID(); ?>">
+                                    <input type="hidden" name="cod_product" value="<?php //echo $product->getCode(); ?>">
+                                    <input type="hidden" name="name_product" value="<?php //echo $product->getNombre(); ?>">
+                                    <input type="hidden" name="price_product" value="<?php //echo $product->PreVtaFinal1(); ?>">
 
                                     <div>
                                         <textarea type="text" name="nota" class="product__details__note" placeholder="Agregar Nota"></textarea>
@@ -81,8 +81,7 @@
                                     </div>
 
                                     <input type="submit" class="primary-btn" value="AGREGAR AL CARRITO">
-                                    <!-- <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a> -->
-                                </form>
+                                </form> -->
                             <?php endif; ?>
 
                             <div class="js-login-message"></div>
