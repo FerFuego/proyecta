@@ -442,7 +442,7 @@ if( !empty($_POST) && isset($_POST['action']) && $_POST['action'] == 'operationB
         $imageFileType = pathinfo($location,PATHINFO_EXTENSION);
         $imageFileType = strtolower($imageFileType);
         // Valid extensions
-        $valid_extensions = array("jpg","jpeg","png","webp");
+        $valid_extensions = array("jpg","jpeg","png","webp","gif");
         // Check file extension
         if(in_array(strtolower($imageFileType), $valid_extensions)) {
             // Upload file
