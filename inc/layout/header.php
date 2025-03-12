@@ -108,6 +108,7 @@
                         <li class="<?php echo (Store::normalize_title() === 'Productos')? 'active':''?>"><a href="./productos.php">Productos</a></li>
                         <li><a href="https://www.proyectamateriales.com/formas-de-pago/">Formas de Pago</a></li>
                         <li class="<?php echo (Store::normalize_title() === 'Carrito')? 'active':''?>"><a href="./carrito.php">Carrito</a></li>
+                        <li><a href="https://www.proyectamateriales.com/blog/">Blog</a></li>
                         <li><a href="https://www.proyectamateriales.com/contacto/">Contacto</a></li>
                         <?php if ( Store::is_Admin() ) : ?>
                             <li class="<?php echo (Store::normalize_title() === 'CPanel')? 'active':''?>"><a href="./cpanel.php">Admin</a></li>
