@@ -103,11 +103,12 @@
             <div class="col-lg-7">
                 <nav class="header__menu">
                     <ul>
-                        <li class="<?php echo (Store::normalize_title() === '')? 'active':''?>"><a href="./">Inicio</a></li>
-                        <li class="<?php echo (Store::normalize_title() === 'Nosotros')? 'active':''?>"><a href="./nosotros.php">Nosotros</a></li>
+                        <li><a href="https://www.proyectamateriales.com/">Inicio</a></li>
+                        <li><a href="https://www.proyectamateriales.com/nosotros/">Nosotros</a></li>
                         <li class="<?php echo (Store::normalize_title() === 'Productos')? 'active':''?>"><a href="./productos.php">Productos</a></li>
+                        <li><a href="https://www.proyectamateriales.com/formas-de-pago/">Formas de Pago</a></li>
                         <li class="<?php echo (Store::normalize_title() === 'Carrito')? 'active':''?>"><a href="./carrito.php">Carrito</a></li>
-                        <li class="<?php echo (Store::normalize_title() === 'Contacto')? 'active':''?>"><a href="./contacto.php">Contacto</a></li>
+                        <li><a href="https://www.proyectamateriales.com/contacto/">Contacto</a></li>
                         <?php if ( Store::is_Admin() ) : ?>
                             <li class="<?php echo (Store::normalize_title() === 'CPanel')? 'active':''?>"><a href="./cpanel.php">Admin</a></li>
                         <?php endif; ?>
