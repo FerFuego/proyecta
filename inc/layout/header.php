@@ -111,7 +111,7 @@
                         <li><a href="https://www.proyectamateriales.com/formas-de-pago/">Formas de Pago</a></li>
                         <li><a href="https://www.proyectamateriales.com/blog/">Blog</a></li>
                         <li><a href="https://www.proyectamateriales.com/contacto/">Contacto</a></li>
-                        <li class="<?php echo (Store::normalize_title() === 'Carrito')? 'active':''?>"><a href="./carrito.php"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li class="<?php echo (Store::normalize_title() === 'Carrito')? 'active':''?>"><a href="./carrito.php" title="carrito" alt="carrito"><i class="fa fa-shopping-bag"></i></a></li>
                         <?php if ( Store::is_Admin() ) : ?>
                             <li class="<?php echo (Store::normalize_title() === 'CPanel')? 'active':''?>"><a href="./cpanel.php">Admin</a></li>
                         <?php endif; ?>
