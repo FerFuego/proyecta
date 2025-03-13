@@ -199,11 +199,13 @@
     padding: 24px 0;
 
     ul {
+        display: flex;
+        gap: 0 15px;
+        flex-wrap: wrap;
 
         li {
             list-style: none;
-            display: inline-block;
-            margin-right: 35px;
+            display: block;
             position: relative;
 
             .header__menu__dropdown {
