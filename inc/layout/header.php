@@ -17,11 +17,14 @@
 
     <nav class="humberger__menu__nav mobile-menu">
         <ul>
-            <li class="<?php echo (Store::normalize_title() === '')? 'active':''?>"><a href="./">Home</a></li>
-            <li class="<?php echo (Store::normalize_title() === 'Nosotros')? 'active':''?>"><a href="./nosotros.php">Nosotros</a></li>
+            <li><a href="https://www.proyectamateriales.com/">Inicio</a></li>
+            <li><a href="https://www.proyectamateriales.com/nosotros/">Nosotros</a></li>
             <li class="<?php echo (Store::normalize_title() === 'Productos')? 'active':''?>"><a href="./productos.php">Productos</a></li>
+            <li><a href="https://www.proyectamateriales.com/formas-de-pago/">Formas de Pago</a></li>
             <li class="<?php echo (Store::normalize_title() === 'Carrito')? 'active':''?>"><a href="./carrito.php">Carrito</a></li>
-            <li class="<?php echo (Store::normalize_title() === 'Contacto')? 'active':''?>"><a href="./contacto.php">Contacto</a></li>
+            <li><a href="https://www.proyectamateriales.com/blog/">Blog</a></li>
+            <li><a href="https://www.proyectamateriales.com/contacto/">Contacto</a></li>
+
             <?php if ( Store::is_Admin() ) : ?>
                 <li><a href="cpanel.php" class="<?php echo (!isset($opcion) || $opcion == '') ? 'active' : '';?> item">Dashboard</a></li>
                 <li><a href="cpanel.php?opcion=importar" class="<?php echo (isset($opcion) && $opcion == 'importar') ? 'active' : '';?> item">Importar Productos</a></li>
