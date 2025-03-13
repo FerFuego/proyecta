@@ -61,7 +61,7 @@
 
                             <h4>Cod.: <?php echo $product->getCode(); ?></h4>
                             <?php if ($general->showPrices()): ?>
-                                <p class="text-danger"><?php echo 'Precio Lista: <strong>$ '. number_format(Productos::PreVtaFinal($product->PreVtaFinal1), 2,',','.') . '</strong>'; ?></p>
+                                <p class="text-danger"><?php echo 'Precio Lista: <strong>$ '. number_format($product->PreVtaFinal1(), 2,',','.') . '</strong>'; ?></p>
                                 <!-- <form class="js-form-cart">
                                     <div class="product__details__price">$<?php //echo number_format($product->PreVtaFinal1(), 2,',','.'); ?></div>
                                     <input type="hidden" name="id_product" value="<?php //echo $product->getID(); ?>">
