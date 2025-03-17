@@ -21,7 +21,7 @@
             <span><?php echo $product->Rubro; ?></span>
             <h6><a href="detalle.php?id=<?php echo $product->Id_Producto; ?>"><?php echo $product->Nombre; ?></a></h6>
             <?php if ($general->showPrices()): ?>
-                <p class="text-danger"><?php echo 'Precio Lista: <strong>$ '. number_format(Productos::PreVtaFinal($product->PreVtaFinal1), 2,',','.') . '</strong>'; ?></p>
+                <p class="text-danger"><?php echo 'Precio Contado: <strong>$ '. number_format(Productos::PreVtaFinal($product->PreVtaFinal1), 2,',','.') . '</strong>'; ?></p>
                 <!-- <form class="js-form-cart">
                     <input type="hidden" name="id_product" value="<?php //echo $product->Id_Producto; ?>">
                     <input type="hidden" name="cod_product" value="<?php //echo $product->CodProducto; ?>">
